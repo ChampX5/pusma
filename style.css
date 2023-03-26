@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: #b8b8b8;
+}
+
+.navbar .nav-items {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar {
+    padding: 10px 40px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.navbar .logo .company-name {
+    font-size: 25px;
+}
+
+.navbar .logo .company-tagline {
+    color: rgb(205, 205, 205);
+}
+
+.nav-item {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.15);
+    width: 0;
+    height: 100%;
+    transition: width ease-in-out 200ms;
+    border-radius: 4px;
+}
+
+.nav-item:hover::before {
+    width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
