@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +17,10 @@
 </head>
 <body>
     <div class="wrapper">
-        
         <div class="bg-text-readable"></div>
     </div>
 
-    <div class="navbar">
+    <div class="navbar navbar-closed">
         <ul class="nav-items">
             <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="/shop" class="nav-link">Shop</a></li>
@@ -30,12 +28,16 @@
             <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
         </ul>
 
-        <div class="logo">
-            <div class="company-name">Pusma Agro Private Limited</div>
-            <div class="company-tagline">A morning without tea, is like a night without a moon.</div>
+        <div class="navbar-top">
+            <div class="logo">
+                <div class="company-name">Pusma Agro Private Limited</div>
+                <div class="company-tagline">A morning without tea, is like a night without a moon.</div>
+            </div>
+            
+            <div class="navbar-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-
-        <!-- TEMPORARY TAGLINE: A morning without tea, is like a night without a moon. -->
     </div>
 
     <div class="container">
@@ -63,5 +65,7 @@
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-twitter"></i>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
